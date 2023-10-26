@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculator</h1>
+    <h5>by Hiten Singh Mogha</h5>
+    <input type="text" class="output" id="output" readonly>
+    <div class="row">
+      <button class="button" onclick="appendToOutput('7')">7</button>
+      <button class="button" onclick="appendToOutput('8')">8</button>
+      <button class="button" onclick="appendToOutput('9')">9</button>
+      <button class="button" onclick="appendToOutput('/')">/</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="appendToOutput('4')">4</button>
+      <button class="button" onclick="appendToOutput('5')">5</button>
+      <button class="button" onclick="appendToOutput('6')">6</button>
+      <button class="button" onclick="appendToOutput('*')">*</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="appendToOutput('1')">1</button>
+      <button class="button" onclick="appendToOutput('2')">2</button>
+      <button class="button" onclick="appendToOutput('3')">3</button>
+      <button class="button" onclick="appendToOutput('-')">-</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="appendToOutput('0')">0</button>
+      <button class="button" onclick="appendToOutput('.')">.</button>
+      <button class="button" onclick="clearOutput()">C</button>
+      <button class="button" onclick="appendToOutput('+')">+</button>
+    </div>
+    <div class="row">
+      <button class="button" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
